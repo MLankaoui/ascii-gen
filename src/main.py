@@ -48,12 +48,13 @@ def option_handler(option):
 
     
     if option == 4: # wizard mode
-        pass
+        wiz(input("enter a number or anything : "), int(input("how many of it do you want? ")))
 
 """
     generate random art
 """
 def gen_random(string: str):
+    time.sleep(3)
     print(randart())
 
 
@@ -61,6 +62,7 @@ def gen_random(string: str):
     text to draw function
 """
 def text_to_draw(text: str, number: int):
+    time.sleep(3)
     sys.stdout.write(art(text, number) + "\n")
 
 
@@ -68,7 +70,15 @@ def text_to_draw(text: str, number: int):
     text to art please
 """
 def text_to_art(word: str, spaces):
+    time.sleep(3)
     print(text2art(word,"random", space=spaces))
+
+"""
+    wiz
+"""
+def wiz(word, number):
+    time.sleep(3)
+    tprint(word*number, "wizard")
 
 
 """
