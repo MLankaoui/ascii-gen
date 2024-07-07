@@ -30,6 +30,26 @@ def options():
 """)
     return int(input("your option here : "))
 
+
+"""
+    handling user options
+"""
+def option_handler(option):
+    if option == 1: #the first option random art
+        pass
+
+    
+    if option == 2: #from text to draw
+        pass
+
+    
+    if option == 3: #from text to art
+        pass
+
+    
+    if option == 4: # wizard mode
+        pass
+
 """
     the main function - entry point
 """
