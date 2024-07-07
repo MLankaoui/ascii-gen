@@ -44,7 +44,7 @@ def option_handler(option):
 
     
     if option == 3: #from text to art
-        pass
+        text_to_art(input("enter a word please : "), int(input("how many space do you want ? ")))
 
     
     if option == 4: # wizard mode
@@ -62,6 +62,13 @@ def gen_random(string: str):
 """
 def text_to_draw(text: str, number: int):
     sys.stdout.write(art(text, number) + "\n")
+
+
+"""
+    text to art please
+"""
+def text_to_art(word: str, spaces):
+    print(text2art(word,"random", space=spaces))
 
 
 """
