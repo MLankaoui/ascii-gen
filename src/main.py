@@ -86,8 +86,9 @@ def wiz(word, number):
 """
 def main():
     welcome_message(get_user_name())
-    optionn = options()
-    option_handler(option=optionn)
+    while True:
+        optionn = options()
+        option_handler(option=optionn)
 
 if __name__ == "__main__":
     main()
