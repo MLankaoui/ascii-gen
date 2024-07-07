@@ -36,7 +36,7 @@ def options():
 """
 def option_handler(option):
     if option == 1: #the first option random art
-        pass
+        gen_random(input("write random : ").lower())
 
     
     if option == 2: #from text to draw
@@ -51,11 +51,19 @@ def option_handler(option):
         pass
 
 """
+    generate random art
+"""
+def gen_random(string: str):
+    print(randart())
+
+
+"""
     the main function - entry point
 """
 def main():
     welcome_message(get_user_name())
     optionn = options()
+    option_handler(option=optionn)
 
 if __name__ == "__main__":
     main()
