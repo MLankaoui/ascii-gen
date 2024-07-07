@@ -40,7 +40,7 @@ def option_handler(option):
 
     
     if option == 2: #from text to draw
-        pass
+        text_to_draw(input("enter a word like: coffee, man, woman... : "), int(input("and how many : ")))
 
     
     if option == 3: #from text to art
@@ -55,6 +55,13 @@ def option_handler(option):
 """
 def gen_random(string: str):
     print(randart())
+
+
+"""
+    text to draw function
+"""
+def text_to_draw(text: str, number: int):
+    sys.stdout.write(art(text, number) + "\n")
 
 
 """
